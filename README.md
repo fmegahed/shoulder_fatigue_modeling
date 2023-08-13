@@ -6,13 +6,13 @@ The goal ... is to determine whether we can accurately predict the fatigue of
 - q4
 
 ## Setup
-**IMPORTANT:** A Python virtual environment is highly recommended. You can learn how to create a virtual environment [here](https://docs.python.org/3/library/venv.html). Different operating systems have different ways of creating virtual environments.
+**IMPORTANT:** A Python virtual environment is highly recommended. You can learn how to create a virtual environment [here](https://docs.python.org/3/library/venv.html). Different operating systems have different methods necessary to create a virtual environment.
 
 This project uses `Python 3.9.12` (download [here](https://www.python.org/downloads/release/python-3912/)). To run the notebook files in this project, you will need to install `pycaret`. To do this, run the command below in your terminal:
 ~~~
 pip install pycaret[full]
 ~~~
-Once it is done downloading, you should be able to run all of the Jupyter Notebook files (extension `.ipynb`) without issue.
+Once it is done downloading, you should be able to run all of the Jupyter Notebook files without issue.
 
 ## Project Directory Structure:
 The data that is used to generate all of the results is stored in the `data/` directory. The file that is used is `initial_features_mod.csv`. This file is a modified version of the `initial_features.csv` file, with additional rows to make model generation simpler. The resulting data generated from the code is stored under the `outputs/` directory and its subdirectories.
@@ -35,17 +35,41 @@ The data that is used to generate all of the results is stored in the `data/` di
 ├─ 📄save_models_individual.ipynb
 ├─ 📄save_sensors_general.ipynb
 ├─ 📄save_sensors_individual.ipynb
-├─ 📄setup.ipynb
 ~~~
 
 If any of these files are missing, please download them from the GitHub repository. If any of the directories are missing, please add them as shown above.
 
 
-## Files and Notebooks
+## Notebooks
+The information below is a brief summary of what each notebook does. Each notebook will contain inside it additional details about its functionality.
 
-*brief summary of purpose of csv and notebook files*
+### save_models_general.ipynb
+The `save_models_general.ipynb` notebook generates the general training and testing models, and saves them in CSV files in the directory `outputs/general/`. The files generated are called `train_general.csv` and `test_general.csv`, which store the training models and testing models, respectively. 
 
-Each notebook will contain additional details about its functionality.
+The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/general/` directory. The CSV file the feature importance data is stored in is `feature_importance_general.ipynb`. 
+
+### save_models_individual.ipynb
+The `save_models_individual.ipynb` notebook generates the individual training and testing models, and saves them in CSV files in the directory `outputs/individual/`. The files generated are called `train_individual.csv` and `test_individual.csv`, which store the training models and testing models, respectively. 
+
+The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/individual/` directory. The CSV file the feature importance data is stored in is `feature_importance_individual.ipynb`. 
+
+### save_sensors_general.ipynb
+The `save_sensors_general.ipynb` notebook generates the general training and testing models, and saves them in CSV files in the directory `outputs/general/`. This notebook generates models by dividing features by sensor and generating a separate model for each sensor. The files generated are called `sensor_train_general.csv` and `sensor_test_general.csv`, which store the training models and testing models, respectively. 
+
+The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/general/` directory. The CSV file the feature importance data is stored in is `sensor_feature_importance_general.ipynb`.
+
+### save_sensors_individual.ipynb
+The `save_sensors_individual.ipynb` notebook generates the individual training and testing models, and saves them in CSV files in the directory `outputs/individual/`. This notebook generates models by dividing features by sensor and generating a separate model for each sensor. The files generated are called `sensor_train_individual.csv` and `sensor_test_individual.csv`, which store the training models and testing models, respectively. 
+
+The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/individual/` directory. The CSV file the feature importance data is stored in is `sensor_feature_importance_individual.ipynb`.
+
+The `analysis.ipynb` file contains many sections that analyze different aspects of the generated models. 
+
+### individual_vs_general.ipynb
+
+
+### analysis.ipynb
+
 
 
 ## File Execution Order:
@@ -53,12 +77,12 @@ There is a recommended order in which to run the files to make sure that everyth
 
 Repurpose descriptions from here to [Files and Notebooks](#files-and-notebooks)?
 
-1. Run the `save_models_general.ipynb` and `save_models_individual.ipynb` files. This will generate the general and indivdual prediction models and their accuracy results, and save them in CSV files in the directory `outputs/general/`. The files generated are called `cv_models_general.csv` and `cv_test_general.csv`, which store the models and their accuracy results respectively.
+1. Run the `save_models_general.ipynb` and `save_models_individual.ipynb` files.
 
-2. Run the `model_importance.ipynb` file. This will generate the data of the feature importance for all of the models, for both general and individual. It will store them in the directories `outputs/general` (for the general models) and `outputs/individual` (for the individual models). The CSV files they are stored in are called `sensor_feature_importance_general.ipynb` and `sensor_feature_importance_individual.ipynb`. 
+3. Run the `save_sensors_general.ipynb` and `save_sensors_individual.ipynb` files.
 
-3. Run the `sensor_general.ipynb` and `sensor_individual.ipynb` files. This will generate the general and indivdual prediction models and their accuracy results, but based on data divided by sensor. The data will be stored in files called `sensor_models_general.ipynb` and `sensor_models_individual.ipynb`, in the directory `outputs/general` and `outputs/individual`. 
+4. Run the `analysis.ipynb` file.
 
-4. The `analysis.ipynb` file contains many sections that analyze different aspects of the data generated from the previous files. ELABORATE ON analysis...
+If the `general/`, `individual/` and `summary/` folders already contain the necessary CSV files, it is not necessary to run the `save_models_general.ipynb`, `save_models_individual.ipynb`, `save_sensors_general.ipynb` and `save_sensors_individual.ipynb` files unless you want to regenerate the models.
 
-If certain csv files exist...
+These files are likely already provided because it can between several hours and a few days to run the model generation notebooks depending on your machine.
