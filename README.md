@@ -1,3 +1,4 @@
+
 ## Introduction
 The goal ... is to determine whether we can accurately predict the fatigue of 
 - .. list the questions here
@@ -66,7 +67,7 @@ The generation of the models will also provide feature importance data for all o
 The `analysis.ipynb` file contains many sections that analyze different aspects of the generated models. 
 
 ### individual_vs_general.ipynb
-
+The `individual_vs_general.ipynb` notebook provides a simple comparison between the individual and general models. For each subject, the average of the general models is compared to its individual counterpart.
 
 ### analysis.ipynb
 
