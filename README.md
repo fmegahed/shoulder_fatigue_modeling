@@ -1,6 +1,5 @@
 
 ## Introduction
-
 The questions we are trying to answer are:
 - Can wearable sensor features be used to classify localized fatigue development for the upper extremity?
 - How many wearable sensors, and at which locations, are needed to obtain satisfactory predictive performance? 
