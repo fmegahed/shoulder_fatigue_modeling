@@ -1,10 +1,10 @@
 
 ## Introduction
-The goal ... is to determine whether we can accurately predict the fatigue of 
-- .. list the questions here
-- q2
-- q3
-- q4
+The questions we are trying to answer are:
+- Can wearable sensor features be used to classify localized fatigue development for the upper extremity?
+- How many wearable sensors, and at which locations, are needed to obtain satisfactory predictive performance? 
+- What are the important predictive features?
+- Can the models be generalized, or can we have individual models? - I'm not sure on the wording of this one. Is this based on the cross-validation/training-testing split differences?
 
 ## Setup
 **IMPORTANT:** A Python virtual environment is highly recommended. You can learn how to create a virtual environment [here](https://docs.python.org/3/library/venv.html). Different operating systems have different methods necessary to create a virtual environment.
