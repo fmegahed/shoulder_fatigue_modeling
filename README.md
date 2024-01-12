@@ -26,6 +26,11 @@ The data that is used to generate all of the results is stored in the `data/` di
 │  ├─ 📃initial_features.csv
 ├─ 📁outputs/
 │  ├─ 📁general/
+│  ├─ 📁graphs/
+│  │  ├─ 📁g/
+│  │  ├─ 📁g_s/
+│  │  ├─ 📁i/
+│  │  ├─ 📁i_s/
 │  ├─ 📁individual/
 │  ├─ 📁summary/
 ├─ 📜.gitignore
@@ -38,39 +43,44 @@ The data that is used to generate all of the results is stored in the `data/` di
 ├─ 📄save_sensors_individual.ipynb
 ~~~
 
-If any of these files are missing, please download them from the GitHub repository. If any of the directories are missing, please add them as shown above.
+If any of these files are missing, please download them from the GitHub repository. If any of the directories are missing, please add them following the guide shown above.
 
 
 ## Notebooks
 The information below is a brief summary of what each notebook does. Each notebook will contain inside it additional details about its functionality.
 
-### save_models_general.ipynb
+#### save_models_general.ipynb
 The `save_models_general.ipynb` notebook generates the general training and testing models, and saves them in CSV files in the directory `outputs/general/`. The files generated are called `train_general.csv` and `test_general.csv`, which store the training models and testing models, respectively. 
 
 The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/general/` directory. The CSV file the feature importance data is stored in is `feature_importance_general.ipynb`. 
 
-### save_models_individual.ipynb
+#### save_models_individual.ipynb
 The `save_models_individual.ipynb` notebook generates the individual training and testing models, and saves them in CSV files in the directory `outputs/individual/`. The files generated are called `train_individual.csv` and `test_individual.csv`, which store the training models and testing models, respectively. 
 
 The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/individual/` directory. The CSV file the feature importance data is stored in is `feature_importance_individual.ipynb`. 
 
-### save_sensors_general.ipynb
+#### save_sensors_general.ipynb
 The `save_sensors_general.ipynb` notebook generates the general training and testing models, and saves them in CSV files in the directory `outputs/general/`. This notebook generates models by dividing features by sensor and generating a separate model for each sensor. The files generated are called `sensor_train_general.csv` and `sensor_test_general.csv`, which store the training models and testing models, respectively. 
 
 The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/general/` directory. The CSV file the feature importance data is stored in is `sensor_feature_importance_general.ipynb`.
 
-### save_sensors_individual.ipynb
+#### save_sensors_individual.ipynb
 The `save_sensors_individual.ipynb` notebook generates the individual training and testing models, and saves them in CSV files in the directory `outputs/individual/`. This notebook generates models by dividing features by sensor and generating a separate model for each sensor. The files generated are called `sensor_train_individual.csv` and `sensor_test_individual.csv`, which store the training models and testing models, respectively. 
 
 The generation of the models will also provide feature importance data for all of the training models. The feature importance data will also be stored in the `outputs/individual/` directory. The CSV file the feature importance data is stored in is `sensor_feature_importance_individual.ipynb`.
 
 The `analysis.ipynb` file contains many sections that analyze different aspects of the generated models. 
 
-### individual_vs_general.ipynb
+#### individual_vs_general.ipynb
 The `individual_vs_general.ipynb` notebook provides a simple comparison between the individual and general models. For each subject, the average of the general models is compared to its individual counterpart.
 
-### analysis.ipynb
-
+#### analysis.ipynb
+The `analysis.ipynb` notebook contains several analyses performed on the model results to determine how models, features, subjects and more perform in predicting subject fatigue. The analyses conducted are listed below.
+- **Subject Influence:** The goal is to determine whether (in the General models) certain subjects result in models that are more or less effective at predicting fatigue by determining how frequently they appear in the training sets of models that perform well or poorly
+- **Most Important Features:** The goal is to find which features are the most influential in high-performing models. 
+- **Plotting Feature Importance:** The goal is to see how all of the different features compare to each other on a graph.
+- **Graphing MAE:** The MAE values of General models and Individual models will all be graphed on Box, Scatter and Violin plots to determine which ones perform the best.
+- **Model Summary:** The General and Individual model tables are summarized to determine which models perform the best for each subjects, as well as what their min, median and max MAE values look like.
 
 
 ## File Execution Order:
