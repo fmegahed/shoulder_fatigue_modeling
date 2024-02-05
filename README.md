@@ -1,17 +1,21 @@
+# Shoulder Fatigue Modeling
 
 ## Introduction
-The questions we are trying to answer are:
+This is the code used to perform the analyses discussed in [paper name here].
+The primary goals of this research paper are:
 - Can wearable sensor features be used to classify localized fatigue development for the upper extremity?
-- How many wearable sensors, and at which locations, are needed to obtain satisfactory predictive performance? 
-- What are the important predictive features?
-- Can the models be generalized, or can we have individual models? - I'm not sure on the wording of this one. Is this based on the cross-validation/training-testing split differences?
+- How many wearable sensors, and at which locations, are needed to obtain satisfactory predictive performance of fatigue?
+- What are the important predictive features to obtain satisfactory predictions?
+- Can models be effectively generalized across subjects, or is there a need for individualized subject models?
+The analyses performed to answer the questions posed are all in the `analysis.ipynb` notebook.
 
 ## Setup
 **IMPORTANT:** A Python virtual environment is highly recommended. You can learn how to create a virtual environment [here](https://docs.python.org/3/library/venv.html). Different operating systems have different methods necessary to create a virtual environment.
 
-This project uses `Python 3.9.12` (download [here](https://www.python.org/downloads/release/python-3912/)). To run the notebook files in this project, you will need to install `pycaret`. To do this, run the command below in your terminal:
-~~~
-pip install pycaret[full]
+This project uses `Python 3.9.12` (download [here](https://www.python.org/downloads/release/python-3912/)). To run the notebook files in this project, you will need to install `pycaret` and `ipympl`. To do this, run the commands below in your terminal:
+~~~bash
+$ pip install pycaret[full]
+$ pip install ipympl
 ~~~
 Once it is done downloading, you should be able to run all of the Jupyter Notebook files without issue.
 
