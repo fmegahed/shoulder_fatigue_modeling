@@ -1,0 +1,43 @@
+Subject,Sensor,Best Model,Min MAE,Median MAE,Max MAE
+1,wrist,K Neighbors Regressor,0.1176,0.626,1.0587
+1,trunk,Light Gradient Boosting Machine,0.5503,0.6843000054359436,0.8367000222206116
+1,upperarm,Random Forest Regressor,0.536,0.6817,0.7317000031471252
+2,wrist,K Neighbors Regressor,0.2053,1.7766,3.2041
+2,trunk,Light Gradient Boosting Machine,1.594,1.9701000452041624,2.3067
+2,upperarm,Gradient Boosting Regressor,1.4306,1.8667,3.4946
+3,wrist,K Neighbors Regressor,0.4042,1.8971,2.4541
+3,trunk,Extra Trees Regressor,1.5556,2.2042,2.3508999347686768
+3,upperarm,Huber Regressor,2.0174,2.375,3.0208
+4,wrist,K Neighbors Regressor,0.12,0.8617,1.0389
+4,trunk,AdaBoost Regressor,0.9435,1.1190999746322632,1.2976
+4,upperarm,Random Forest Regressor,0.8742,1.0667,1.3793
+5,wrist,K Neighbors Regressor,0.1125,0.4014,0.5452
+5,trunk,Huber Regressor,0.3762,0.4206,0.5135
+5,upperarm,Decision Tree Regressor,0.3958,0.4582,0.5295000076293945
+6,wrist,AdaBoost Regressor,0.8425,2.6082,3.7542
+6,trunk,Decision Tree Regressor,1.9,2.782599925994873,3.6585
+6,upperarm,Random Forest Regressor,2.551,2.8364999294281006,6.1438
+8,wrist,Decision Tree Regressor,0.1667,0.25,0.8833
+8,trunk,Huber Regressor,0.126,0.2137999981641769,0.5417
+8,upperarm,Decision Tree Regressor,0.0833,0.1700000017881393,0.3207
+9,wrist,K Neighbors Regressor,0.3824,1.8343,3.4678
+9,trunk,Gradient Boosting Regressor,1.6776,2.1166000366210938,3.7389
+9,upperarm,Extra Trees Regressor,1.311,2.1958999633789062,3.7893
+10,wrist,K Neighbors Regressor,0.2349,0.9243,1.9633
+10,trunk,Extra Trees Regressor,0.6768,0.8787999749183655,0.9805
+10,upperarm,Extra Trees Regressor,0.7,0.795199990272522,1.1111
+12,wrist,K Neighbors Regressor,0.4473,1.3843,1.4921
+12,trunk,Gradient Boosting Regressor,1.0676,1.2894999980926514,3.0115
+12,upperarm,Extra Trees Regressor,1.098,1.3032000064849854,1.8209
+13,wrist,K Neighbors Regressor,0.6947,1.956,2.1786
+13,trunk,Huber Regressor,2.061,2.1789,3.6184
+13,upperarm,Ridge Regression,1.819200038909912,1.927299976348877,2.8684
+15,wrist,Decision Tree Regressor,0.3088,1.893,3.0412
+15,trunk,Random Forest Regressor,1.545,1.85,2.0588
+15,upperarm,Extra Trees Regressor,1.2706,1.8378,2.0889
+16,wrist,K Neighbors Regressor,0.6333,2.5,3.439
+16,trunk,Gradient Boosting Regressor,2.0471,2.5768001079559326,3.2894
+16,upperarm,Decision Tree Regressor,1.9,2.5445001125335693,3.0303
+17,wrist,K Neighbors Regressor,0.3115,0.9038,1.5309
+17,trunk,Extra Trees Regressor,0.921,1.2425999641418457,1.8096
+17,upperarm,Extra Trees Regressor,0.95,1.2101000547409058,1.4222
