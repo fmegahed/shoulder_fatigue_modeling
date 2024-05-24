@@ -2,3 +2,4 @@
 venv
 logs.log
 .vscode/
+catboost_info/
