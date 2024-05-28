@@ -1,5 +1,5 @@
 .venv
 venv
-logs.log
+**/logs.log
 .vscode/
 catboost_info/
