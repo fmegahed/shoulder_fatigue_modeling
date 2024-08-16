@@ -25,29 +25,37 @@ The data that is used to generate all of the results is stored in the `data/` di
 ### The directory tree should look as follows:
 ~~~
 📁shoulder_fatigue_modeling/
-├─ 📁data/
-│  ├─ 📃initial_features_mod.csv
-│  ├─ 📃initial_features.csv
-├─ 📁outputs/
-│  ├─ 📁general/
-│  ├─ 📁graphs/
-│  │  ├─ 📁g/
-│  │  ├─ 📁g_s/
-│  │  ├─ 📁i/
-│  │  ├─ 📁i_s/
-│  ├─ 📁individual/
-│  ├─ 📁summary/
-├─ 📜.gitignore
-├─ 📄analysis.ipynb
-├─ 📄individual_vs_general.ipynb
-├─ 📙README.md
-├─ 📄save_models_general.ipynb
-├─ 📄save_models_individual.ipynb
-├─ 📄save_sensors_general.ipynb
-├─ 📄save_sensors_individual.ipynb
+├── 📁data/
+│   ├── 📄initial_features_mod.csv
+│   └── 📄initial_features.csv
+├── 📁m_creation/
+│   ├── 📁analysis/
+│   │   ├── 📄analysis-feature_importance.ipynb
+│   │   ├── 📄analysis-subject_influence.ipynb
+│   │   └── 📄analysis.ipynb
+│   ├── 📁outputs/
+│   │   ├── 📁general/
+│   │   ├── 📁graphs/
+│   │   ├── 📁individual/
+│   │   └── 📁summary/
+│   ├── 📄save_models_general.ipynb
+│   ├── 📄save_models_individual.ipynb
+│   ├── 📄save_sensors_general.ipynb
+│   └── 📄save_sensors_individual.ipynb
+├── 📁m_creation-classification/
+│   ├── 📁outputs/
+│   ├── 📄analysis.ipynb
+│   ├── 📄create_data.ipynb
+│   └── 📄save_general_classification.ipynb
+├── 📁m_creation-general_limited/
+│   ├── 📁outputs/
+│   ├── 📄analysis.ipynb
+│   └── 📄save_limited_model_classification.ipynb
+├── 📜.gitignore
+└── 📙README.md
 ~~~
 
-If any of these files are missing, please download them from the GitHub repository. If any of the directories are missing, please add them following the guide shown above.
+If any of these files are missing, please download them from the GitHub repository. If any of the directories are missing, please add them following the guide shown above. The output directories will
 
 
 ## Notebooks
