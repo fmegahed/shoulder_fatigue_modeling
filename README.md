@@ -7,6 +7,7 @@ The primary goals of this research paper are:
 - How many wearable sensors, and at which locations, are needed to obtain satisfactory predictive performance of fatigue?
 - What are the important predictive features to obtain satisfactory predictions?
 - Can models be effectively generalized across subjects, or is there a need for individualized subject models?
+
 The analyses performed to answer the questions posed are all in the `analysis.ipynb` notebook.
 
 ## Setup
